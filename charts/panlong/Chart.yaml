@@ -6,7 +6,7 @@ version: 1.1.0
 home: https://kinyz.com
 icon: https://bitnami.com/assets/stacks/mongodb/img/mongodb-stack-220x234.png
 sources:
-- https://github.com/geeog/kinyzCharts
+- https://github.com/geeog/kinyzCharts/tree/master/charts/panlong
 maintainers:
 - name: Moul
   email: moul@163.com
