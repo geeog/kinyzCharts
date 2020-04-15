@@ -4,7 +4,7 @@ categories:
 questions:
 - variable: defaultImage
   default: "true"
-  description: "Use default Docker images"
+  description: "是否使用默认镜像"
   label: Use Default Images
   type: boolean
   show_subquestion_if: false
