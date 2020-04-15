@@ -1,5 +1,5 @@
 .catalog:
-  name: Kafka
+  name: panlong
   version: 0.9.0-rancher1
   description: |
     (Experimental) Apache Kafka cluster.
