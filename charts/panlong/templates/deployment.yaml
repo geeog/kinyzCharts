@@ -1,22 +1,17 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ include "mongodb.fullname" . }}
-  labels:
-    app.kubernetes.io/name: {{ include "mongodb.name" . }}
-    helm.sh/chart: {{ include "mongodb.chart" . }}
-    app.kubernetes.io/instance: {{ .Release.Name }}
-    app.kubernetes.io/managed-by: {{ .Release.Service }}
+  name: {{ include "panlong.fullname" . }}
 spec:
-  replicas: {{ .Values.replicaCount }}
+  replicas: 1
   selector:
     matchLabels:
-      app.kubernetes.io/name: {{ include "mongodb.name" . }}
+      app.kubernetes.io/name: {{ include "panlong.name" . }}
       app.kubernetes.io/instance: {{ .Release.Name }}
   template:
     metadata:
       labels:
-        app.kubernetes.io/name: {{ include "mongodb.name" . }}
+        app.kubernetes.io/name: {{ include "panlong.name" . }}
         app.kubernetes.io/instance: {{ .Release.Name }}
     spec:
       containers:

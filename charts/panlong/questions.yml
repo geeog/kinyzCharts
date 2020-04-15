@@ -60,7 +60,7 @@ questions:
   label: MongoDB 密码
   group: "服务设置"
 - variable: service.type
-  default: "NodePort"
+  default: "ClusterIP"
   description: "请选择节点类型"
   type: enum
   group: "节点设置"
