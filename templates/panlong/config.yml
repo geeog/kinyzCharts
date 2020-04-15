@@ -1,10 +1,9 @@
-name: panlongapi # 应用商店模板名称
-description: panlongapimiaoshu
-  # 应用商店模板描述
-
-version: 1.0 # 应用商店模板对应的版本
-category: # 用于模板搜索时的目录
-maintainer: moul # 该模板的维护者
-license: MIT # 许可类型
-projectURL: # 和模板相关的URL
-
+name: panlong API
+description: |
+  panlong API
+version: 1.0.0
+category: Clustering
+maintainer: "MOUL <moul@163.com>"
+minimum_rancher_version: v0.59.0
+license:
+projectURL: https://github.com/geeog/kinyzCharts
