@@ -5,10 +5,10 @@ questions:
 - variable: defaultImage
   default: "true"
   description: "是否使用默认镜像"
-  label: Use Default Images
+  label: 镜像选择
   type: boolean
   show_subquestion_if: false
-  group: "Container Images"
+  group: "版本设置"
   subquestions:
   - variable: image.repository
     default: "registry.cn-shenzhen.aliyuncs.com/moul/panglongapi"
