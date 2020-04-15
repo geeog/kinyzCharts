@@ -11,15 +11,15 @@ questions:
   group: "Container Images"
   subquestions:
   - variable: image.repository
-    default: "mongo"
-    description: "MongoDB image name"
+    default: "registry.cn-shenzhen.aliyuncs.com/moul/panglongapi"
+    description: "盘龙api镜像"
     type: string
-    label: MongoDB Image Name
+    label: 盘龙api镜像
   - variable: image.tag
-    default: "3.6.5"
-    description: "MongoDB image tag"
+    default: "1.1"
+    description: "盘龙api版本号"
     type: string
-    label: Image Tag
+    label: 版本号
 - variable: auth.enabled
   default: false
   description: "Enabling access control on a MongoDB deployment enforces authentication, requiring users to identify themselves"
