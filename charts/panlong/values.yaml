@@ -9,7 +9,8 @@ image:
   tag: 1.4
   pullPolicy: IfNotPresent
 
-imagePullSecrets: []
+imagePullSecrets:
+  - name: aliyun
 nameOverride: ""
 fullnameOverride: ""
 
