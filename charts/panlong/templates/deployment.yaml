@@ -16,6 +16,7 @@ spec:
     spec:
     {{- with .Values.imagePullSecrets }}
       imagePullSecrets:
+        - name: aliyun
         {{- toYaml . | nindent 8 }}
     {{- end }}
       serviceAccountName: {{ include "panlong.serviceAccountName" . }}
