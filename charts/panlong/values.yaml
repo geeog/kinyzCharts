@@ -5,7 +5,8 @@
 replicaCount: 1
 
 image:
-  repository: nginx
+  repository: registry.cn-shenzhen.aliyuncs.com/moul/panglongapi
+  tag: 1.4
   pullPolicy: IfNotPresent
 
 imagePullSecrets: []
@@ -34,7 +35,7 @@ securityContext: {}
 
 service:
   type: ClusterIP
-  port: 80
+  port: 8000
 
 ingress:
   enabled: false

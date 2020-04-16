@@ -16,7 +16,7 @@ questions:
     type: string
     label: 盘龙api镜像
   - variable: image.tag
-    default: "1.1"
+    default: "1.4"
     description: "盘龙api版本号"
     type: string
     label: 版本号
