@@ -5,6 +5,6 @@ name: panlong
 version: 1.0.0
 home: https://kinyz.com
 maintainers:
-  - name: fsl
-    email: 117131930@qq.com
-engine: fsl
+  - name: moul
+    email: moul@163.com
+engine: moul
