@@ -23,7 +23,7 @@ spec:
         - name: {{ .Chart.Name }}
           securityContext:
             {{- toYaml .Values.securityContext | nindent 12 }}
-          env:
+        - env:
             - name: ENV_MONGO_DBNAME
               value: {{ .Values.env.ENV_MONGO_DBNAME}}
             - name: ENV_MONGO_HOST
