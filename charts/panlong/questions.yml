@@ -56,7 +56,7 @@ questions:
 - variable: env.ENV_MONGO_PASSWORD
   default: ""
   description: "请输入使用的mongo数据库密码"
-  type: password
+  type: string
   label: MongoDB 密码
   group: "服务设置"
 - variable: service.type
