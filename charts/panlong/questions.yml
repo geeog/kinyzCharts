@@ -72,7 +72,7 @@ questions:
   subquestions:
   - variable: service.nodePort
     default: ""
-    description: "节点端口设置 范围:(10000-32767)"
+    description: "节点端口设置 范围:(10000-32767) 如开启对外服务发现,请将服务端口8000暴露"
     type: int
     min: 10000
     max: 32767

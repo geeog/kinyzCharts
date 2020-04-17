@@ -1,8 +1,8 @@
 apiVersion: v1
-appVersion: "1.0"
-description: panlong API
+appVersion: "1.1.0"
+description: 盘龙API应用程序 模板版本V1.1.0 镜像版本1.4
 name: panlong
-version: 1.0.0
+version: 1.1.0
 home: https://mongodb.org
 maintainers:
   - name: moul
