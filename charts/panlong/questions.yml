@@ -1,17 +1,12 @@
 questions:
 - variable: defaultImage
   default: "true"
-  description: "是否使用默认镜像"
-  label: 镜像选择
+  description: "是否使用默认版本"
+  label: 版本设置
   type: boolean
   show_subquestion_if: false
   group: "版本设置"
   subquestions:
-  - variable: image.repository
-    default: "registry.cn-shenzhen.aliyuncs.com/moul/panglongapi"
-    description: "盘龙api镜像"
-    type: string
-    label: 盘龙api镜像
   - variable: image.tag
     default: "1.4"
     description: "盘龙api版本号"
@@ -60,14 +55,14 @@ questions:
   group: "服务设置"
 - variable: service.type
   default: "ClusterIP"
-  description: "请选择节点类型"
+  description: "ClusterIP 内部集群模式 需要通过工作负载来进行解析"
   type: enum
   group: "节点设置"
   options:
     - "ClusterIP"
     - "NodePort"
   required: true
-  label: 节点类型
+  label: 服务类型
   show_subquestion_if: "NodePort"
   subquestions:
   - variable: service.nodePort
