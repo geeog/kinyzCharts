@@ -31,7 +31,7 @@ spec:
             - name: ENV_MONGO_PASSWORD
               value: {{ .Values.env.ENV_MONGO_PASSWORD}}
             - name: ENV_MONGO_PORT
-              value: "{{ .Values.env.ENV_MONGO_PORT}}"
+              value: "27017"
             - name: ENV_MONGO_USER
               value: {{ .Values.env.ENV_MONGO_USER}}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"

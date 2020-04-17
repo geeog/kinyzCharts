@@ -35,12 +35,6 @@ questions:
   type: string
   label: MongoDB IP
   group: "服务设置"
-- variable: env.ENV_MONGO_PORT
-  default: 27017
-  description: "请输入使用的mongo数据库端口"
-  type: string
-  label: MongoDB 端口
-  group: "服务设置"
 - variable: env.ENV_MONGO_DBNAME
   default: "database"
   description: "请输入使用的mongo数据库名字"
