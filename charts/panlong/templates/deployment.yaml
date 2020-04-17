@@ -25,15 +25,15 @@ spec:
             {{- toYaml .Values.securityContext | nindent 12 }}
           env:
             - name: ENV_MONGO_DBNAME
-              value: {{ .Values.env.ENV_MONGO_DBNAME}}
+              value: database
             - name: ENV_MONGO_HOST
-              value: {{ .Values.env.ENV_MONGO_HOST}}
+              value: 10.43.181.16
             - name: ENV_MONGO_PASSWORD
-              value: {{ .Values.env.ENV_MONGO_PASSWORD}}
+              value: gOBddXPLur@ghwnz}
             - name: ENV_MONGO_PORT
-              value: {{ .Values.env.ENV_MONGO_PORT}}
+              value: "27017"
             - name: ENV_MONGO_USER
-              value: {{ .Values.env.ENV_MONGO_USER}}
+              value: admin
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           resources:
