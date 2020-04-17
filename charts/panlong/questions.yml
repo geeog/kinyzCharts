@@ -29,31 +29,31 @@ questions:
 #  show_subquestion_if: true
 #  group: "服务设置"
 #  subquestions:
-- variable: auth.dbHost
+- variable: env.ENV_MONGO_HOST
   default: ""
   description: "请输入使用的mongo数据库IP(最好是集群Mongo的地址)"
   type: string
   label: MongoDB IP
   group: "服务设置"
-- variable: auth.dbPort
+- variable: env.ENV_MONGO_PORT
   default: 27017
   description: "请输入使用的mongo数据库端口"
   type: int
   label: MongoDB 端口
   group: "服务设置"
-- variable: auth.dbName
+- variable: env.ENV_MONGO_DBNAME
   default: ""
   description: "请输入使用的mongo数据库名字"
   type: string
   label: MongoDB 数据库
   group: "服务设置"
-- variable: auth.dbUser
+- variable: env.ENV_MONGO_USER
   default: "root"
   description: "请输入使用的mongo数据库用户名"
   type: string
   label: MongoDB 用户名
   group: "服务设置"
-- variable: auth.dbPassWord
+- variable: env.ENV_MONGO_PASSWORD
   default: ""
   description: "请输入使用的mongo数据库密码"
   type: password

@@ -26,6 +26,19 @@ spec:
             privileged: false
             readOnlyRootFilesystem: false
             runAsNonRoot: false
+        - env:
+            - name: ENV_MONGO_DBNAME
+              value: {{ .Values.env.ENV_MONGO_DBNAME}}
+            - name: ENV_MONGO_HOST
+              value: {{ .Values.env.ENV_MONGO_HOST}}
+            - name: ENV_MONGO_PASSWORD
+              value: {{ .Values.env.ENV_MONGO_PASSWORD}}
+            - name: ENV_MONGO_PORT
+              value: {{ .Values.env.ENV_MONGO_PORT}}
+            - name: ENV_MONGO_USER
+              value: {{ .Values.env.ENV_MONGO_USER}}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           resources: {}
+
+
