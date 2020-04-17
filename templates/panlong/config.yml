@@ -1,9 +1,0 @@
-name: panlong
-description: |
-  panlong API
-version: 1.0.0
-category: Clustering
-maintainer: "MOUL <moul@163.com>"
-minimum_rancher_version: v0.59.0
-license:
-projectURL: https://github.com/geeog/kinyzCharts
