@@ -67,3 +67,10 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
+
+env:
+  ENV_MONGO_DBNAME: database
+  ENV_MONGO_HOST: 10.43.181.16
+  ENV_MONGO_PASSWORD: gOBddXPLur@ghwnz
+  ENV_MONGO_PORT: "27017"
+  ENV_MONGO_USER: admin
