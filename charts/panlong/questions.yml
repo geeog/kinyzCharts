@@ -42,7 +42,7 @@ questions:
   label: MongoDB 端口
   group: "服务设置"
 - variable: env.ENV_MONGO_DBNAME
-  default: ""
+  default: "database"
   description: "请输入使用的mongo数据库名字"
   type: string
   label: MongoDB 数据库
