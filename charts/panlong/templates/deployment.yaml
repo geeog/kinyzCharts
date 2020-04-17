@@ -34,6 +34,14 @@ spec:
               value: "{{ .Values.env.ENV_MONGO_PORT}}"
             - name: ENV_MONGO_USER
               value: {{ .Values.env.ENV_MONGO_USER}}
+          {{- if contains "NodePort" .Values.service.type -}}
+          ports:
+            - containerPort: 8000
+              hostPort: {{.Values.service.nodePort}}
+              name: apiPort
+              protocol: TCP
+          {{- end }}
+
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           resources:
