@@ -17,17 +17,12 @@ spec:
       imagePullSecrets:
       - name: aliyun
       serviceAccountName: {{ include "panlong.serviceAccountName" . }}
-      securityContext: {}
+      securityContext:
+        {{- toYaml .Values.podSecurityContext | nindent 8 }}
       containers:
-
         - name: {{ .Chart.Name }}
           securityContext:
-            allowPrivilegeEscalation: false
-            capabilities: {}
-            privileged: false
-            readOnlyRootFilesystem: false
-            runAsNonRoot: false
-
+            {{- toYaml .Values.securityContext | nindent 12 }}
           env:
             - name: ENV_MONGO_DBNAME
               value: {{ .Values.env.ENV_MONGO_DBNAME}}
@@ -41,6 +36,17 @@ spec:
               value: {{ .Values.env.ENV_MONGO_USER}}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
-          resources: {}
-
-
+          resources:
+            {{- toYaml .Values.resources | nindent 12 }}
+      {{- with .Values.nodeSelector }}
+      nodeSelector:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+    {{- with .Values.affinity }}
+      affinity:
+        {{- toYaml . | nindent 8 }}
+    {{- end }}
+    {{- with .Values.tolerations }}
+      tolerations:
+        {{- toYaml . | nindent 8 }}
+    {{- end }}
