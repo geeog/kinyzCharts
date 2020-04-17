@@ -48,7 +48,7 @@ questions:
   label: MongoDB 数据库
   group: "服务设置"
 - variable: env.ENV_MONGO_USER
-  default: "root"
+  default: "admin"
   description: "请输入使用的mongo数据库用户名"
   type: string
   label: MongoDB 用户名

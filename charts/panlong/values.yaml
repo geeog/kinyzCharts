@@ -67,10 +67,3 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
-
-env:
-  ENV_MONGO_DBNAME: 1
-  ENV_MONGO_HOST: 1
-  ENV_MONGO_PASSWORD: 1
-  ENV_MONGO_PORT: 1
-  ENV_MONGO_USER: 1

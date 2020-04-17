@@ -19,6 +19,7 @@ spec:
       serviceAccountName: {{ include "panlong.serviceAccountName" . }}
       securityContext: {}
       containers:
+
         - name: {{ .Chart.Name }}
           securityContext:
             allowPrivilegeEscalation: false
@@ -26,6 +27,7 @@ spec:
             privileged: false
             readOnlyRootFilesystem: false
             runAsNonRoot: false
+
         - env:
             - name: ENV_MONGO_DBNAME
               value: {{ .Values.env.ENV_MONGO_DBNAME}}
