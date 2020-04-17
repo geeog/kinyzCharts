@@ -7,7 +7,7 @@ replicaCount: 1
 image:
   repository: registry.cn-shenzhen.aliyuncs.com/moul/panglongapi
   tag: 1.4
-  pullPolicy: IfNotPresent
+  pullPolicy: Always
 
 imagePullSecrets: []
 nameOverride: ""
